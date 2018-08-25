@@ -7,6 +7,18 @@
     <title>Question with one answer</title>
 </head>
 <body>
-    .,mn.,.,j.,jk.,kj.,jk.jk
+        <form action="/the-question" method = "GET" id = "form">
+            <label for="taquestion">Give me a question:</label>
+            <textarea name="taquestion" id="taquestion" cols="30" rows="2" placeholder="your question here" required></textarea>
+            <br>
+            <br>
+            <label for="select">Set the only answer</label>
+            <select name="select" id="select">
+                <option value="Yes" selected>Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br><br>
+            <button type="submit">SUBMIT</button>
+        </form>
 </body>
 </html>
