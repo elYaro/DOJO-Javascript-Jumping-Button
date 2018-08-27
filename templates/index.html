@@ -7,18 +7,18 @@
     <title>Question with one answer</title>
 </head>
 <body>
-        <form action="/the-question" method = "GET" id = "form">
-            <label for="taquestion">Give me a question:</label>
-            <textarea name="taquestion" id="taquestion" cols="30" rows="2" placeholder="your question here" required></textarea>
+        <form action="/thequestion" method = "POST" id = "form">
+            <label for="question1">Give me a question:</label>
+            <textarea name="question1" id="question1" cols="30" rows="2" placeholder="your question here" required></textarea>
             <br>
             <br>
-            <label for="select">Set the only answer</label>
-            <select name="select" id="select">
+            <label for="question2">Set the only answer</label>
+            <select name="question2" id="question2">
                 <option value="Yes" selected>Yes</option>
                 <option value="No">No</option>
             </select>
             <br><br>
             <button type="submit">SUBMIT</button>
         </form>
-</body>
+    </body>
 </html>
