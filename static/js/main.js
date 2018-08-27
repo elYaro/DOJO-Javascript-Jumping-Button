@@ -13,6 +13,8 @@ function buttonjump(thisbutton){
     
     thisbutton.style.position = 'absolute';
     let changeposition = Math.random() * 100;
+    var audio = new Audio('/static/sounds/buttonclick.mp3');
+    audio.play();
     thisbutton.style.left = changeposition +'%';
 
 }
