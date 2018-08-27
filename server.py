@@ -7,11 +7,11 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/thequestion', methods = ["GET","POST"])
+@app.route('/thequestion', methods = ["POST"])
 def thequestion():
-    question = request.form['question']
-    select = request.form['select']
-    return render_template('thequestion.html', question = question , select = select)
+    question1 = request.form.get('question1')
+    question2 = request.form.get('question2')
+    return render_template('thequestion.html', question1 = question1 , question2 = question2)
 
 
 

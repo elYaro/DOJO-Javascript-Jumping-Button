@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Question</title>
+    <script src="{{ url_for('static', filename = 'js/main.js') }}" async></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href= "{{ url_for('static', filename = 'css/style.css') }}">
 </head>
 <body>
-    <h1>Your question was: {{ question }}</h1>
-    <button type= button>YES</button>
-    <button type= button>NO</button>
-    
+    <h1>Your question was: {{ question1 }}</h1>
+    <button type= button id = 'buttonYes' onclick = 'answerCheck(this)'>Yes</button>
+    <button type= button id = 'buttonNo' onclick = 'answerCheck(this)'>No</button>
+    <div id = question2 data-question2 = {{question2}}></div>
 </body>
 </html>
